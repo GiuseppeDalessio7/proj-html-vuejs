@@ -1,6 +1,6 @@
 <script >
 import { store } from '../src/store.js';
-import appheader from '../src/components/appHeader.vue'
+import appHeader from '../src/components/appHeader.vue'
 import appMain from '../src/components/appMain.vue'
 import appFooter from '../src/components/appFooter.vue'
 
@@ -8,7 +8,7 @@ import appFooter from '../src/components/appFooter.vue'
 export default {
   name: "App",
   components: {
-    appheader,
+    appHeader,
     appMain,
     appFooter,
 
@@ -28,8 +28,7 @@ export default {
 
 
 <template>
-  <h1>Ciao</h1>
-  <appheader></appheader>
+  <appHeader></appHeader>
   <appMain></appMain>
   <appFooter></appFooter>
 </template>
