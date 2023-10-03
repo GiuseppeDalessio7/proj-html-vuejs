@@ -17,15 +17,15 @@ export default {
 <template>
     <div class="back_img">
         <div class="container position-relative">
-            <div class="text-white position my_div  ">
-                <h3 class="mybold">Welcome to</h3>
-                <h3 class="mybold inline"> Pets</h3>
-                <span class="mylighter">DogMilo </span>
+            <div class="text-white position my_div ">
+                <h2 class="m-0">Welcome to</h2> <span class="mylighter">DogMilo</span> <span class="my_pets">Pets</span>
 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+
+
+                <p class="my-3 my_font">Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <div class="my-4">
-                    <a class="text-decoration-none  text-secondary
-text-white my_button mybold " href="">Get Started</a>
+                    <a class="text-decoration-none  text-secondary 
+text-white my_button  " href="">Get Started</a>
                     <img class="my_play" src="../assets/img/play.png" alt="">
                 </div>
             </div>
@@ -45,17 +45,31 @@ text-white my_button mybold " href="">Get Started</a>
     background-position: center;
 }
 
-.mybold {
-    font-weight: bolder;
+.my_pets {
+    font-size: 2rem;
+    font-weight: 500;
 }
 
+.mybold {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+
 .mylighter {
-    font-weight: 400;
+    font-weight: lighter;
+    font-size: 1.9rem;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Gabarito', cursive;
+}
+
+.my_font {
+    font-size: 13px;
 }
 
 .position {
     position: absolute;
-    top: 100px;
+    top: 175px;
     left: 10px;
 }
 
@@ -72,7 +86,8 @@ text-white my_button mybold " href="">Get Started</a>
     padding-right: 20px;
     border-radius: 25px;
     background-color: #ce7c2a;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: larger;
 }
 
 .my_play {
