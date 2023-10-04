@@ -5,16 +5,18 @@ import appJumbotron from './components/appJumbotron.vue';
 import appTopMain from '../src/components/appTopMain.vue';
 import appBottomMain from './components/appBottomMain.vue';
 import appTopFooter from '../src/components/appTopFooter.vue';
-
+import appBottomFooter from '../src/components/appBottomFooter.vue';
 
 export default {
   name: "App",
   components: {
     appHeader,
+    appJumbotron,
     appTopMain,
     appBottomMain,
     appTopFooter,
-    appJumbotron
+    appBottomFooter,
+
 
   },
   data() {
@@ -37,6 +39,7 @@ export default {
   <appTopMain></appTopMain>
   <appBottomMain></appBottomMain>
   <appTopFooter></appTopFooter>
+  <appBottomFooter></appBottomFooter>
 </template>
 
 <style lang="scss" scoped>
