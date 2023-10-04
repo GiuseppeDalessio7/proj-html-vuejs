@@ -4,7 +4,7 @@ import appHeader from '../src/components/appHeader.vue';
 import appJumbotron from './components/appJumbotron.vue';
 import appTopMain from '../src/components/appTopMain.vue';
 import appBottomMain from './components/appBottomMain.vue';
-import appFooter from '../src/components/appFooter.vue';
+import appTopFooter from '../src/components/appTopFooter.vue';
 
 
 export default {
@@ -13,7 +13,7 @@ export default {
     appHeader,
     appTopMain,
     appBottomMain,
-    appFooter,
+    appTopFooter,
     appJumbotron
 
   },
@@ -36,7 +36,7 @@ export default {
   <appJumbotron></appJumbotron>
   <appTopMain></appTopMain>
   <appBottomMain></appBottomMain>
-  <appFooter></appFooter>
+  <appTopFooter></appTopFooter>
 </template>
 
 <style lang="scss" scoped>

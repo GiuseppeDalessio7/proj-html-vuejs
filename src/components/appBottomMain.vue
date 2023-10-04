@@ -22,7 +22,7 @@ export default {
         <div class="p-5">
             <img src="../assets/img/dog-icon.png" alt="">
             <small class="mx-2 small">Choose Us</small>
-            <h2>Why Choose Us?</h2>
+            <h2 class="my-1">Why Choose Us?</h2>
             <div class=" right ">
                 <div class="right d-flex left_margin1">
                     <img src="../assets/img/w-3.png" alt="">
