@@ -16,7 +16,7 @@ export default {
 
 <template>
     <div class="container d-flex p-3">
-        <div class="my_box ">
+        <div class="my_box" style="margin-left: 12rem;">
             <img src="../assets/img/dog-icon.png" alt="">
             <small class="brown_font"> Review and rating</small>
             <h3 class="my-3">Over 8000 Customers With 5-Star Review</h3>
@@ -32,7 +32,7 @@ export default {
             <i class="fa-solid fa-star" style="color: #fbd608;"></i>
             <img src="../assets/img/" alt="">
         </div>
-        <div class="my_box p-3" style="background-color: #f4f5f5;margin-left: -4rem;">
+        <div class="my_box p-3" style="background-color: #f4f5f5;margin-left: -5rem;">
             <i class="fa-solid fa-star" style="color: #fbd608;"></i>
             <i class="fa-solid fa-star" style="color: #fbd608;"></i>
             <i class="fa-solid fa-star" style="color: #fbd608;"></i>
@@ -50,7 +50,7 @@ export default {
             </div>
 
         </div>
-        <div class="my_box p-3" style="background-color: #f4f5f5;margin-left: -4rem;">
+        <div class="my_box p-3" style="background-color: #f4f5f5;margin-left: -5rem;">
             <i class="fa-solid fa-star" style="color: #fbd608;"></i>
             <i class="fa-solid fa-star" style="color: #fbd608;"></i>
             <i class="fa-solid fa-star" style="color: #fbd608;"></i>
@@ -68,19 +68,27 @@ export default {
             </div>
         </div>
     </div>
-    <div class="nexteprev" style="background-color: aqua;">
-        <img src="../assets/img/left-arrow.png" alt="">
-        <img src="../assets/img/next.png" alt="">
+    <div class="container">
+        <div class=" nexteprev text-end">
+            <img src="../assets/img/left-arrow.png" alt="">
+            <img src="../assets/img/next.png" alt="">
+        </div>
     </div>
 </template>
 
 
 <style lang="scss" scoped>
+.nexteprev {
+    width: 1182px;
+}
+
 .nexteprev>img {
     width: 45px;
     aspect-ratio: 1/1;
     background-color: #ce7c2a;
-    margin: 1rem;
+    margin: 10px;
+    padding: 10px;
+
 }
 
 .brown_font {
