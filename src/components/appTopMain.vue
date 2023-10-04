@@ -27,7 +27,7 @@ export default {
             <div class=" myposition">
                 <img class="myicon my-2 margin_l " src="../assets/img/dog-icon.png" alt="">
                 <small class="mx-2 my_color">About us</small>
-                <h3>Welcome DogMilo Pets</h3>
+                <h3 class="my_font">Welcome DogMilo Pets</h3>
                 <p class="margin_t">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia non atque sit
                     saepe?
                     Perspiciatis
@@ -43,20 +43,100 @@ export default {
     </div>
     <div class="my_backcolor" style=" background-color: #f4f4f5;">
         <div class="container">
-            <div class="text-center my_h">
-                <p class="my_color padding ">Service</p>
+            <div class="my_h">
+                <p class="my_color padding text-center ">Service</p>
                 <h5 class="my_h text-center">DogMilo Pet Care Service
                     For Your Best Friends.</h5>
+            </div>
+            <div class="d-flex  justify-content-center">
+                <div class=" my_pillows p-3 mx-3 my-4">
+                    <img src="../assets/img/d-1.png" alt="">
+                    <p id="p_tytle" class="my-2">Pet Sitting</p>
+                    <p>The readable contet of a page when looking at its layout</p>
+                    <img id="netx" src="../assets/img/next.png" alt="">
+                </div>
+
+                <div class=" my_pillows p-3 mx-3 my-4">
+                    <img src="../assets/img/d-2.png" alt="">
+                    <p id="p_tytle" class="my-2">Puppy Sitting</p>
+                    <p>The readable contet of a page when looking at
+                        its layout</p>
+                    <img id="netx" src="../assets/img/next.png" alt="">
+                </div>
+                <div class=" my_pillows p-3 mx-3 my-4">
+                    <img src="../assets/img/d-3.png" alt="">
+                    <p id="p_tytle" class="my-2">Dog Walking</p>
+                    <p>The readable contet of a page when looking at
+                        its layout</p>
+                    <img id="netx" src="../assets/img/next.png" alt="">
+                </div>
+                <div class=" my_pillows p-3 mx-3 my-4">
+                    <img src="../assets/img/d-4.png" alt="">
+                    <p id="p_tytle" class="my-2">Night Care</p>
+                    <p>The readable contet of a page when looking at
+                        its layout</p>
+                    <img id="netx" src="../assets/img/next.png" alt="">
+                </div>
+                <div class=" my_pillows p-3 mx-3 my-4">
+                    <img src="../assets/img/d-1.png" alt="">
+                    <p id="p_tytle" class="my-2">Pet Sitting</p>
+                    <p>The readable contet of a page when looking at
+                        its layout</p>
+                    <img id="netx" src="../assets/img/next.png" alt="">
+                </div>
+
+
             </div>
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
+.my_font {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Gabarito', cursive;
+}
+
+#p_tytle {
+    font-weight: 500;
+    font-size: larger;
+    font-size: 14px;
+}
+
+#netx {
+    width: 30px;
+    aspect-ratio: 1/1;
+    border-radius: 15px;
+    background-color: rgb(0, 47, 255);
+    padding: 5px;
+    filter: invert(1);
+    margin-top: 12px;
+}
+
+.my_pillows>p {
+    font-size: 10px;
+
+}
+
+.my_pillows>img {
+    width: 35px;
+}
+
+.my_pillows {
+    width: 130px;
+    height: 200px;
+    background-color: #ce7c2a;
+    text-align: center;
+    color: white;
+    border-radius: 60px;
+}
+
 .my_h {
     width: 250px;
     margin: auto;
-    // margin-left: 425px;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Gabarito', cursive;
+
 }
 
 .my_backg {
