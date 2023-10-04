@@ -41,14 +41,37 @@ export default {
             </div>
         </div>
     </div>
+    <div class="my_backcolor" style=" background-color: #f4f4f5;">
+        <div class="container">
+            <div class="text-center my_h">
+                <p class="my_color padding ">Service</p>
+                <h5 class="my_h text-center">DogMilo Pet Care Service
+                    For Your Best Friends.</h5>
+            </div>
+        </div>
+    </div>
 </template>
 
 <style lang="scss" scoped>
+.my_h {
+    width: 250px;
+    margin: auto;
+    // margin-left: 425px;
+}
+
 .my_backg {
     background-image: url(../assets/img/dog-logo.png);
     background-repeat: no-repeat;
     background-position: right top 40px;
     background-size: 150px;
+}
+
+
+.my_backcolor {
+    width: 100%;
+    height: 400px;
+    background: url(../assets/img/dog-logo.png) right top 40px no-repeat, url(../assets/img/dog-left.png) left top 35px no-repeat;
+    background-size: 150px, 100px;
 }
 
 .myimg {
@@ -65,6 +88,8 @@ export default {
 
 .my_color {
     color: #93887b;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 .myposition {
@@ -83,5 +108,10 @@ export default {
 
 .margin_l {
     margin-left: -4px;
+}
+
+.padding {
+    padding-top: 2rem;
+    padding-bottom: 5px;
 }
 </style>
