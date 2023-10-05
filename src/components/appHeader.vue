@@ -48,13 +48,25 @@ export default {
                 <a class="text-decoration-none mx-2 text-secondary my_text mybold" href="">Services</a>
                 <a class="text-decoration-none mx-2 text-secondary my_text mybold" href="">Training</a>
                 <a class="text-decoration-none mx-2 text-secondary my_text mybold" href="">Blogs</a>
-                <a class="text-decoration-none mx-2 text-secondary text-white my_button mybold " href="">Get In Toch!</a>
+                <a class="text-decoration-none mx-2 text-secondary text-white my_button mybold " href=""><Span>Get In
+                        Toch!</Span></a>
             </div>
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
+span:hover {
+    color: white !important;
+}
+
+a:hover {
+    color: orange !important;
+    font-weight: 600;
+    transition: all 1s;
+    font-size: 15px;
+}
+
 .my_color {
     background-color: #7f7045;
 }
@@ -70,6 +82,7 @@ export default {
 .mybold {
     font-weight: 500;
     font-size: small;
+
 }
 
 .my_button {
@@ -80,6 +93,7 @@ export default {
     padding-right: 10px;
     border-radius: 25px;
     background-color: #ce7c2a;
+    color: white;
 }
 
 .my_icon {

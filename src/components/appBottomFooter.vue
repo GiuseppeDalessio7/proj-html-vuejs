@@ -45,32 +45,46 @@ export default {
                     </li>
                 </ul>
                 <ul class=""> <span>Support</span>
-                    <li>Contact Us</li>
-                    <li>Online Chat</li>
-                    <li>Whatsapp</li>
-                    <li>Telegram</li>
-                    <li>Snapchat</li>
+                    <li> <a href="">Contact Us</a></li>
+                    <li> <a href="">Online Chat</a></li>
+                    <li> <a href="">Whatsapp</a></li>
+                    <li> <a href="">Telegram</a></li>
+                    <li> <a href="">Snapchat</a></li>
                 </ul>
                 <ul class="li_render"> <span>About</span>
-                    <li>About Us</li>
-                    <li>Blog</li>
-                    <li>Career</li>
-                    <li>Job</li>
-                    <li>In press</li>
+                    <li> <a href="">About Us</a></li>
+                    <li> <a href="">Blog</a></li>
+                    <li> <a href="">Career</a></li>
+                    <li> <a href="">Job</a></li>
+                    <li> <a href="">In press</a></li>
                 </ul>
                 <ul class="li_render"> <span>Faq</span>
-                    <li>Account</li>
-                    <li>Order</li>
-                    <li>Delivery</li>
-                    <li>Payment</li>
-                    <li>Return</li>
+                    <li> <a href="">Account</a></li>
+                    <li> <a href="">Order</a></li>
+                    <li> <a href="">Delivery</a></li>
+                    <li> <a href="">Payment</a></li>
+                    <li> <a href="">Return</a></li>
                 </ul>
                 <ul class="li_render"> <span>Contact Me</span>
-                    <li> <i class="fa-solid fa-location-arrow i_render" style="color: #ce7c2a;"></i>4500 Mercantile plaza,
-                        suite 300,
-                        fort worth,TX,76137,USA</li>
-                    <li> <i class="fa-solid fa-phone i_render " style="color: #ce7c2a;"></i>+1(817)901 3373</li>
-                    <li> <i class="fa-solid fa-envelope i_render " style="color: #ce7c2a;"></i>info@example.com</li>
+                    <li> <a href=""></a>
+                        <div class="d-flex">
+                            <i class="fa-solid fa-location-arrow i_render" style="color: #ce7c2a;
+                            "></i>
+                            <span style="margin-top: -5px;"><a
+                                    href="https://www.google.com/maps/place/4500+Mercantile+Plaza+Suite+300,+Fort+Worth,+TX+76137,+Stati+Uniti/@32.8226058,-97.3097575,17z/data=!3m1!4b1!4m6!3m5!1s0x864e76553d4513bf:0x6389582d184af713!8m2!3d32.8226058!4d-97.3097575!16s%2Fg%2F11n022nbvm?entry=ttu"
+                                    target="_blank">4500
+                                    Mercantile
+                                    plaza,
+                                    suite 300,
+                                    fort worth,TX,76137,USA</a>
+
+                            </span>
+                        </div>
+                    </li>
+                    <li> <a href=""></a> <i class="fa-solid fa-phone i_render " style="color: #ce7c2a;"></i>+1(817)901 3373
+                    </li>
+                    <li> <a href=""></a> <i class="fa-solid fa-envelope i_render "
+                            style="color: #ce7c2a;"></i>info@example.com</li>
                 </ul>
             </div>
         </div>
@@ -81,6 +95,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+a {
+    text-decoration: none;
+    color: #acabac;
+}
+
 .my_cont {
     width: 100%;
     height: 70px;
