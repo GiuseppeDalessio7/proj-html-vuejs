@@ -48,15 +48,15 @@ export default {
                 <a class="text-decoration-none mx-2 text-secondary my_text mybold" href="">Services</a>
                 <a class="text-decoration-none mx-2 text-secondary my_text mybold" href="">Training</a>
                 <a class="text-decoration-none mx-2 text-secondary my_text mybold" href="">Blogs</a>
-                <a class="text-decoration-none mx-2 text-secondary text-white my_button mybold " href=""><Span>Get In
-                        Toch!</Span></a>
+                <a class="text-decoration-none mx-2 text-secondary text-white my_button mybold " href=""><small>Get In
+                        Toch!</small></a>
             </div>
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
-span:hover {
+small:hover {
     color: white !important;
 }
 
