@@ -36,6 +36,20 @@ text-white my_button  " href="">Get Started</a>
 </template>
 
 <style lang="scss" scoped>
+a:hover {
+    transition: all 1s;
+    padding: 0.5rem;
+}
+
+
+
+
+
+.my_play:hover {
+    background-color: #ce7c2a;
+    transition: all 1s;
+}
+
 .back_img {
     width: 100%;
     height: 500px;
