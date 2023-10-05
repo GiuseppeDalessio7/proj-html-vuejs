@@ -21,6 +21,29 @@ export default
 
     ]
 
+firstFooterVoices: [
+    {
+        "text": 'Get in Touch ',
+    },
+
+    {
+        "text": 'Support',
+    },
+
+    {
+        "text": 'About',
+    },
+
+    {
+        "text": 'Faq',
+    },
+
+    {
+        "text": 'Contact Me',
+
+    }
+]
+
 
 
 

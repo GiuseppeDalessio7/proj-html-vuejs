@@ -1,10 +1,16 @@
 <script>
+import props from '../props';
+import appDynamicFooter from './appDynamicFooter.vue';
+
 export default {
     name: 'appBottomFooter',
+    components: {
+        appDynamicFooter
+    },
 
     data() {
         return {
-
+            props
         }
     },
 
@@ -25,73 +31,7 @@ export default {
             <span class="input-group-text widthspan margin text-uppercase" id="addon-wrapping">@</span>
         </div>
     </div>
-    <div class="my_bg">
-        <div class="container position-relative ">
-            <div class="container mycontainer d-flex">
-                <ul class=""> <span>Get in Touch</span>
-                    <li>Have a question for us?
-                        we'll answer your problem here
-                    </li>
-                    <li class="li_icon"><i class="fa-brands fa-square-facebook fa-xl mx-1 my-1 my_icon"
-                            style="color: #005eff"></i>
-                        <i class="fa-brands fa-square-pinterest fa-xl mx-1 my_icon" style="color: #c92626;
-"></i>
-                        <i class="fa-brands fa-square-twitter fa-xl mx-1 my_icon" style="color: #00a8f0;
-"></i>
-                        <i class="fa-brands fa-linkedin fa-xl mx-1 my_icon" style="color: #2062d5;
-"></i>
-                        <i class="fa-brands fa-square-instagram fa-xl mx-1 my_icon" style="color: #cd1392;
-"></i>
-                    </li>
-                </ul>
-                <ul class=""> <span>Support</span>
-                    <li> <a href="">Contact Us</a></li>
-                    <li> <a href="">Online Chat</a></li>
-                    <li> <a href="">Whatsapp</a></li>
-                    <li> <a href="">Telegram</a></li>
-                    <li> <a href="">Snapchat</a></li>
-                </ul>
-                <ul class="li_render"> <span>About</span>
-                    <li> <a href="">About Us</a></li>
-                    <li> <a href="">Blog</a></li>
-                    <li> <a href="">Career</a></li>
-                    <li> <a href="">Job</a></li>
-                    <li> <a href="">In press</a></li>
-                </ul>
-                <ul class="li_render"> <span>Faq</span>
-                    <li> <a href="">Account</a></li>
-                    <li> <a href="">Order</a></li>
-                    <li> <a href="">Delivery</a></li>
-                    <li> <a href="">Payment</a></li>
-                    <li> <a href="">Return</a></li>
-                </ul>
-                <ul class="li_render"> <span>Contact Me</span>
-                    <li> <a href=""></a>
-                        <div class="d-flex">
-                            <i class="fa-solid fa-location-arrow i_render" style="color: #ce7c2a;
-                            "></i>
-                            <span style="margin-top: -5px;"><a
-                                    href="https://www.google.com/maps/place/4500+Mercantile+Plaza+Suite+300,+Fort+Worth,+TX+76137,+Stati+Uniti/@32.8226058,-97.3097575,17z/data=!3m1!4b1!4m6!3m5!1s0x864e76553d4513bf:0x6389582d184af713!8m2!3d32.8226058!4d-97.3097575!16s%2Fg%2F11n022nbvm?entry=ttu"
-                                    target="_blank">4500
-                                    Mercantile
-                                    plaza,
-                                    suite 300,
-                                    fort worth,TX,76137,USA</a>
-
-                            </span>
-                        </div>
-                    </li>
-                    <li> <a href=""></a> <i class="fa-solid fa-phone i_render " style="color: #ce7c2a;"></i>+1(817)901 3373
-                    </li>
-                    <li> <a href=""></a> <i class="fa-solid fa-envelope i_render "
-                            style="color: #ce7c2a;"></i>info@example.com</li>
-                </ul>
-            </div>
-        </div>
-        <div class="my_cont text-center">
-            <p class="text-white ">Copyright 2022 by AttDogMilo.com</p>
-        </div>
-    </div>
+    <appDynamicFooter></appDynamicFooter>
 </template>
 
 <style lang="scss" scoped>
