@@ -1,15 +1,19 @@
 <script>
+import props from '../props'
+import appservice from '../components/appservice.vue'
+
 export default {
-    name: 'appheader',
+
+    name: 'appHeader',
+    components: {
+        appservice
+    },
 
     data() {
         return {
-
+            props
         }
     },
-
-
-
 
 }
 </script>
@@ -38,20 +42,42 @@ export default {
         </div>
     </div>
     <div>
-        <div class="container p-3 d-flex justify-content-between align-items-center">
-            <div class="justify-content-between">
-                <img id="logo" src="../assets/img/logo.png" alt="">
-            </div>
-            <div class="">
-                <a class="text-decoration-none mx-2 text-secondary my_text mybold " href="">Home</a>
-                <a class="text-decoration-none mx-2 text-secondary my_text mybold" href="">About</a>
-                <a class="text-decoration-none mx-2 text-secondary my_text mybold" href="">Services</a>
-                <a class="text-decoration-none mx-2 text-secondary my_text mybold" href="">Training</a>
-                <a class="text-decoration-none mx-2 text-secondary my_text mybold" href="">Blogs</a>
-                <a class="text-decoration-none mx-2 text-secondary text-white my_button mybold " href=""><small>Get In
-                        Toch!</small></a>
+        <div>
+            <div class="container p-3 d-flex justify-content-between align-items-center">
+                <div class="justify-content-between">
+                    <img style="margin-right: 46.9rem;" id="logo" src="../assets/img/logo.png" alt="">
+                    <appservice :name="props.nome" v-for="props in props"></appservice>
+                    <a class="text-decoration-none mx-2 text-secondary text-white mybold my_button  text-center"
+                        href=""><small>Get in Toch!</small></a>
+
+                </div>
+
+
+
             </div>
         </div>
+
+        <!-- <div class="container p-3 d-flex justify-content-between align-items-center"> -->
+        <!-- <div class="justify-content-between"> -->
+        <!-- <img id="logo" src="../assets/img/logo.png" alt=""> -->
+
+        <!-- </div> -->
+        <!-- <appservice :name="props.nome" :bottone="props.bottone" v-for="props in props"></appservice> -->
+        <!-- <a class="text-decoration-none mx-2 text-secondary text-white mybold my_button  text-center" href=""><small>Get -->
+        <!-- in -->
+        <!-- Toch!</small></a> -->
+
+        <!-- <div class=""> -->
+        <!-- <a href="">{{ name }}</a> -->
+        <!-- <a class="text-decoration-none mx-2 text-secondary my_text mybold " href=""></a> -->
+        <!-- <a class="text-decoration-none mx-2 text-secondary my_text mybold" href=""></a> -->
+        <!-- <a class="text-decoration-none mx-2 text-secondary my_text mybold" href=""></a> -->
+        <!-- <a class="text-decoration-none mx-2 text-secondary my_text mybold" href=""></a> -->
+        <!-- <a class="text-decoration-none mx-2 text-secondary my_text mybold" href=""></a> -->
+        <!-- <a class="text-decoration-none mx-2 text-secondary text-white my_button mybold " href=""><small>Get In -->
+        <!-- Toch!</small></a> -->
+        <!-- </div> -->
+
     </div>
 </template>
 
@@ -86,14 +112,15 @@ a:hover {
 }
 
 .my_button {
-    width: 30px;
+    width: 100px;
     height: 40px;
-    padding: 8px;
+    padding: 10px;
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 25px;
     background-color: #ce7c2a;
     color: white;
+
 }
 
 .my_icon {
